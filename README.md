@@ -8,8 +8,8 @@ biodiversity informatics field (with [GBIF](http://www.gbif.org) for example), a
 as an exchange format.    
 
 Due to its nature (basically, a bunch of CSV files zipped together) it is however inefficient in terms of data use and 
-analysis. Most people who consume Darwin Core will therefore immediately extract data from the Archive and load
-from the archive and transfer it to some format easier to manipulate, such as a relational database.
+analysis. Most people who consume Darwin Core will therefore immediately extract data from the Archive and transfer it 
+to some format easier to manipulate, such as a relational database.
 
 ## DarwinSQL: the concept
 
@@ -23,7 +23,7 @@ There are two main goals to this project:
         - Stable, with the goal to ultimately become an official standard
         
    - Providing a basic implementation of this format:
-        - A simple command-line tool to automatically convert: Darwin Core Archive -> DarwinSQL.
+        - A command-line tool to automatically convert (no questions asked): Darwin Core Archive -> DarwinSQL
         - (Possibly) a small webapp to perform this conversion
         - (Possibly) a DarwinSQL -> Darwin Core Archive converter
         - ...
