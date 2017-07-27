@@ -21,14 +21,17 @@ There are two main milestones to this project:
    - Defining a new file format with the following characteristics:
         - Can hold the same content (data and metadata) as Darwin Core Archives
         - Keeps the perks of DwC-A: simple, contained in a single file, ...
-        - Based on [SQLite](https://www.sqlite.org/) for improved performance, being directly queryable with SQL, being 
-        directly compatible with the huge SQLite ecosystem (admin tools, GUI, converters, ...)
+        - Based on [SQLite](https://www.sqlite.org/):
+            - improved performance
+            - queryable with SQL 
+            - directly compatible with the huge SQLite ecosystem (admin tools, GUI, converters, ...)
         - Stable, with the goal to ultimately become an official standard
         
    - Providing a basic implementation of this format:
         - A command-line tool to automatically convert (no questions asked): Darwin Core Archive -> DarwinSQL
         - (Possibly) a small webapp to perform this conversion
         - (Possibly) a DarwinSQL -> Darwin Core Archive converter
+        - (Possibly) some examples
         - ...
 
 ## The DarwinSQL format
