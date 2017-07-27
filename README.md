@@ -1,19 +1,22 @@
 # DarwinSQL
-DarwinCore Archives expressed as SQLite
+Like DarwinCore Archive, but using SQLite
 
 ## Rationale
 
-The [Darwin Core Archive](https://en.wikipedia.org/wiki/Darwin_Core_Archive) format is widely used in the 
-biodiversity informatics field (with [GBIF](http://www.gbif.org) for example), and has largely shown its effectiveness 
-as an exchange format.    
+The [Darwin Core Archive](https://en.wikipedia.org/wiki/Darwin_Core_Archive) format is widely for biodiversity
+informatics (within the [GBIF](http://www.gbif.org) community for example), and has largely shown its effectiveness
+as an exchange format.
 
-Due to its nature (basically, a bunch of CSV files zipped together) it is however inefficient in terms of data use and 
-analysis. Most people who consume Darwin Core will therefore immediately extract data from the Archive and transfer it 
-to some format easier to manipulate, such as a relational database.
+Due to its nature (basically, a bunch of CSV files zipped together) it is however a poor candidate for data use and
+analysis: many users get data in Darwin Core Archive, but then immediately extract data from the Archive and transfer it
+to some custom/non-standard format that's easier to manipulate, such as a spreadsheet or a relational database.
 
 ## DarwinSQL: the concept
 
-There are two main goals to this project:
+The aim of DarwinSQL is to propose an alternative, standardized file format that can be used for exchanging data,
+but also for simple data use and analysis.
+
+There are two main milestones to this project:
 
    - Defining a new file format with the following characteristics:
         - Can hold the same content (data and metadata) as Darwin Core Archives
